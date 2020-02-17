@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Woodpeck Campaigns Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="campaign_home">
+    <!-- ─────────────── NAVIGATION ──────────────────────────────────── -->
+  <header class="header">
+    <nav class="nav" role="navigation">
+      <a class="woodpecker-logo" href="#">
+        <svg viewbox="0 0 66 105">
+          <path fill="#FFF" d="M49.878 79.693c6.932 3.805 15.905 6.986 15.905 6.986s-5.548-13.816-12.771-29.741c2.534-14.392-3.397-20.418-8.675-25.728-6.399-6.453-7.362-12.365-7.362-12.365s-2.518 2.449-3.646 4.96C25.16 19.379 19.699 11.19 19.47-.013 19.334.065 6.958 5.606 6.364 21.181a22.124 22.124 0 00.392 5.097l-1.279 1.73c-2.479 3.353-2.849 7.719-2.186 11.326l-.335 1.713c-.22 1.119-.143 3.126 1.115 4.825C.193 52.124-.801 59.786 1.288 67.618c1.981 7.438 7.404 14.995 12.579 18.847 5.547 4.131 10.086 6.116 16.79 8.27 5.979 1.924 15.776 2.669 16.346 10.276 1.356-.058 2.488-.769 2.488-.769 2.72-1.612 3.707-4.672 4.039-7.074.707.574 1.127 2.137 1.127 2.137 1.731-3.862.072-8.227.072-8.227l.982.554c-1.073-5.746-3.373-9.369-5.833-11.939z"/>
+          <path fill="#D8D8D8" d="M44.06 56.511s-2.952.199-2.854-2.509c.118-2.708 1.264-9.279-6.401-15.218.128 1.727-.579 3.16-.579 3.16s-2.376-8.035-15.795-6.653c-1.286.271-1.782.768-1.782.768s5.917-.487 8.191 1.803c-2.366.004-4.288.86-4.288.86s8.452-1.007 8.606 5.238c.706-.647.995-2.243.995-2.243s.83 1.633.683 3.678c.536-.186 1.214-1.477 1.184-1.932 1.049 1.32.438 3.682.438 3.682s.99.723 1.448 1.267a2.691 2.691 0 012.369-1.424c.455 0 .886.125 1.265.322-.75-.918-1.967-1.595-3.647-2.098 4.03-.716 7.83 3.028 4.234 6.457l.005-.032c-.197.19-.421.348-.669.472.263.297 2.083 2.509 1.75 5.772-.653-2.431-3.954-5.694-3.954-5.694l.014-.004a2.666 2.666 0 01-1.571-1.757c-.764-.704-1.682-1.51-2.479-2.123-14.012-6.433-22.068 1.31-22.334 1.956.285-.311 1.802-.683 2.184-.566-.171.084-2.526 1.717-3.368 3.689.322-.348 1.181-.657 1.546-.62-1.76 2.447-2.461 7.743-2.461 7.743s-.79 1.194-.874 2.374c.246-.429.754-.948 1.062-1.065-.389 11.156 7.829 22.513 8.106 23.003.071.101 4.448 3.961 8.709 5.671a45.554 45.554 0 01-5.147-5.036c-12.151-13.96-9.951-30.176-1.069-34.235 7.677-3.619 18.219 2.859 19.888 7.451.012.041.025.095.037.135 1.946 2.267 3.894 1.42 4.497-.366.332-1.008 1.242-1.615 2.082-1.934a.061.061 0 00-.021.008z"/>
+          <path fill="#545454" d="M55.052 70.363l-5.738-11.174s-.961-1.861-5.439-1.248l10.768 15.168-6.829-13.47 7.238 10.724zm-11-8.903c-.174-.423-1.495-.83-1.918-.126-.511.822 1.281 2.359 3.006 2.858-2.223-1.454-2.776-2.963-1.088-2.732zM20.173 44.023c-1.083-.09-1.807-1.122-1.807-1.122s.048 1.319.311 2.054c-3.748-.397-5.736-3.113-5.736-3.113s.217 1.577.687 2.558c-8.094.779-16.39 20 1.454 40.417-.277-.49-8.495-11.847-8.106-23.003-.308.117-.816.637-1.062 1.065.084-1.18.874-2.374.874-2.374s.702-5.296 2.461-7.743c-.365-.037-1.224.272-1.546.62.842-1.972 3.197-3.605 3.368-3.689-.382-.117-1.899.255-2.184.566.266-.646 8.322-8.389 22.334-1.956.02.004.028.008.047.012-5.11-4.899-11.156-5.792-11.156-5.792s-.136.699.061 1.5z"/>
+          <path fill="#E21037" d="M36.14 28.723c-.366.668-.34 1.533-.34 1.533S19.057 24.124 16.202 9.919c-1.692 3.585-.155 7.875-.155 7.875s-2.419-2.845-2.607-4.786c-7.296 14.991 4.555 22.115 4.99 22.283 13.419-1.382 15.795 6.653 15.795 6.653s.707-1.434.579-3.16c7.665 5.938 6.52 12.509 6.401 15.218-.098 2.708 2.854 2.509 2.854 2.509s.006-.004.021-.008c.31-.068 2.782-.62 4.203.079 3.263-18.115-7.896-19.973-12.143-27.859z"/>
+          <path fill="#060608" d="M51.03 88.845c.255-.079 1.274.062 1.867.475-2.034-9.828-19.485-21.331-19.485-21.331s1.195.435 2.224-.094c12.722 9.59 26.61 15.458 26.61 15.458s-3.903-9.729-11.365-26.155C54.962 35.8 39.53 34.239 36.13 23.058c-.433.511-1.583 2.574-1.71 3.66-1.838-.966-15.146-6.298-16.709-23.011-10.927 7.983-12.456 24.231-3.46 31.836-3.778.216-6.758-4.215-7.129-6.32-3.867 5.229-1.569 12.94.331 14.718-1.735-.694-2.493-2.495-2.493-2.495s-.516 2.602 1.748 4.159c-9.43 13.107-2.546 31.134 8.375 39.213-17.845-20.417-9.549-39.638-1.455-40.417-.47-.981-.687-2.558-.687-2.558s1.989 2.715 5.736 3.113c-.262-.735-.311-2.054-.311-2.054s.723 1.032 1.807 1.122c-.197-.801-.062-1.499-.062-1.499s6.046.892 11.156 5.792l-.047-.012c.797.613 1.715 1.419 2.479 2.123a2.698 2.698 0 01-.121-.742c0-.458.127-.891.326-1.272-.458-.544-1.448-1.267-1.448-1.267s.611-2.362-.438-3.682c.03.455-.648 1.746-1.184 1.932.147-2.045-.683-3.678-.683-3.678s-.289 1.596-.995 2.243c-.155-6.245-8.606-5.238-8.606-5.238s1.921-.856 4.288-.86c-2.274-2.29-8.191-1.803-8.191-1.803s.496-.497 1.782-.768c-.435-.168-12.286-7.292-4.99-22.283.188 1.941 2.607 4.786 2.607 4.786s-1.537-4.29.155-7.875C19.057 24.124 35.8 30.256 35.8 30.256s-.026-.865.34-1.533c4.247 7.886 15.406 9.744 12.145 27.859-1.421-.699-3.894-.147-4.203-.079-.84.318-1.75.926-2.082 1.934-.604 1.786-2.551 2.633-4.497.366-.012-.04-.025-.094-.037-.135l.014.135s-2.695 4.467 1.545 7.264c-1.336.062-2.17-.704-2.17-.704s.429 1.795 1.444 2.677c-1.715-1.372-3.187-2.624-3.187-2.624s-3.938.395-6.678-1.747c-.173 5.1 6.04 6.064 11.227 11.921-27.975-7.359-22.219-21.418-22.139-21.649-9.051 6.52-.828 21.155.756 23.13 12.591 16.257 29.191 13.701 30.305 25.317 3.5-2.238 3.028-8.384 3.028-8.384s1.287.62 1.91 1.663c.241-4.071-2.255-6.623-2.491-6.822zm-1.717-29.656l5.738 11.174-7.239-10.723 6.829 13.47-10.767-15.169c4.479-.613 5.439 1.248 5.439 1.248zm-7.179 2.145c.423-.704 1.744-.297 1.918.126-1.688-.23-1.135 1.278 1.088 2.732-1.725-.499-3.517-2.036-3.006-2.858zm-8.243-16.121c1.681.502 2.897 1.179 3.647 2.098.205.26.383.543.515.84l.006.024a.135.135 0 00.04.069.78.78 0 01-.379.958.76.76 0 01-1.022-.347.677.677 0 01.008-.648 1.476 1.476 0 00-.766 1.282 1.47 1.47 0 001.473 1.471c.341 0 .66-.128.915-.34a5.098 5.098 0 01-.197 1.018l-.005.032c3.595-3.429-.205-7.173-4.235-6.457zm2.382 7.167c-.344 0-.696-.07-1.003-.196l-.014.004s3.301 3.263 3.954 5.694c.333-3.264-1.487-5.476-1.75-5.772-.364.168-.755.27-1.187.27z"/>
+        </svg>
+      </a>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="active">Campaigns</a></li>
+        <li class="nav__item"><a href="#">Prospects</a></li>
+        <li class="nav__item"><a href="#">Inbox</a></li>
+        <li class="nav__item--select-team">
+          <select class="select">
+            <option selected value="team-view">Team view</option>
+            <option value="user-view">My Campaigns</option>
+            <option value="other">Other</option>
+          </select>
+        </li>
+        <li class="nav__item--user">
+          <select class="select">
+            <option>
+              Ania <br>Woodpecker.co
+            </option>
+            <option><a href="#">Settings</a></option>
+            <option><a href="#">Log out</a></option>
+          </select>
+        </li>
+      </ul>
+      </nav>
+  </header>
+  <!-- ─────────────── MAIN DASHBOARD MENU ──────────────────────────────────── -->
+  <section class="dashboard">
+    <div class="container">
+      <div class="dashboard__menu">
+        <input type="search" name="search_campaigns" id="search_campaigns" placeholder="search..." class="searchbox menu__item">
+        <span class="menu__item">or filter by</span>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="menu__item">status</a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="menu__item">sent from</a>
+        <button class="btn-green menu__item" id="add-campaign">add campaign</button>
+      </div>
+      <div class="dashboard__campaigns">
+        <div class="tableheader">
+          <div class="title">
+            <div class="emails-stats">
+              <div class="column">
+                prospects
+              </div>
+              <div class="column">
+                delivered
+              </div>
+              <div class="column">
+                opened
+              </div>
+              <div class="column">
+                replied
+              </div>
+            </div>
+          </div>
+          <div class="interest-levels">interest level</div>
+        </div>
+            <div class="campaign">
+          <div class="status">
+            <i class="fa fa-files-o"></i>
+            <div>draft</div>
+          </div>
+          <div class="name">
+            <div class="title">test</div>
+            <div class="meta">
+              <p class="creation-info">created by: Lukasz Stroka <span class="date-info">(17 July 2018)</span></p>
+              <p class="email-info">sent from: <span class="email-from">Matt from 52Challenges.com</span></p>
+            </div>
+            <div class="other">|||||</div>
+          </div>
+          <div class="levels">
+            <div class="iconsAndStats">
+              <i class="fa fa-user-o"></i>
+              <div>0</div>
+            </div>
+            <div class="iconsAndStats">
+              <i class="fa fa-envelope-o"></i>
+              <div>0</div>
+            </div>
+            <div class="iconsAndStats">
+              <i class="fa fa-envelope-open-o"></i>
+              <div>0%</div>
+            </div>
+            <div class="iconsAndStats">
+              <i class="fa fa-reply"></i>
+              <div>0%</div>
+            </div>
+          </div>
+          <div class="interest">
+            <div class="iconsAndStats">
+              <i class="fa fa-smile-o"></i>
+              <div>0</div>
+             </div>
+            <div class="iconsAndStats">
+              <i class="fa fa-meh-o"></i>
+              <div>0</div>
+            </div>
+            <div class="iconsAndStats">
+              <i class="fa fa-frown-o"></i>
+              <div>0</div>
+            </div>
+          </div>
+          <div class="stats">
+            <label class="label"for="stats">stats</label>
+            <select name="stats">
+              <option value="0"></option>
+              <option value="1">Month</option>
+              <option value="2">Year</option>
+            </select>
+          </div>
+        </div>
+            <div class="campaign">
+          <div class="status">
+            <i class="fa fa-files-o"></i>
+            <div>draft</div>
+          </div>
+          <div class="name">
+            <div class="title">test</div>
+            <div class="meta">
+              <p class="creation-info">created by: Lukasz Stroka <span class="date-info">(17 July 2018)</span></p>
+              <p class="email-info">sent from: <span class="email-from">Matt from 52Challenges.com</span></p>
+            </div>
+            <div class="other">|||||</div>
+          </div>
+          <div class="levels">
+            <div class="iconsAndStats">
+              <i class="fa fa-user-o"></i>
+              <div>0</div>
+            </div>
+            <div class="iconsAndStats">
+              <i class="fa fa-envelope-o"></i>
+              <div>0</div>
+            </div>
+            <div class="iconsAndStats">
+              <i class="fa fa-envelope-open-o"></i>
+              <div>0%</div>
+            </div>
+            <div class="iconsAndStats">
+              <i class="fa fa-reply"></i>
+              <div>0%</div>
+            </div>
+          </div>
+          <div class="interest">
+            <div class="iconsAndStats">
+              <i class="fa fa-smile-o"></i>
+              <div>0</div>
+             </div>
+            <div class="iconsAndStats">
+              <i class="fa fa-meh-o"></i>
+              <div>0</div>
+            </div>
+            <div class="iconsAndStats">
+              <i class="fa fa-frown-o"></i>
+              <div>0</div>
+            </div>
+          </div>
+          <div class="stats">
+            <label class="label"for="stats">stats</label>
+            <select name="stats">
+              <option value="0"></option>
+              <option value="1">Month</option>
+              <option value="2">Year</option>
+            </select>
+          </div>
+        </div>
+        <div class="campaign">
+          <div class="status">
+            <i class="fa fa-files-o"></i>
+            <div>draft</div>
+          </div>
+          <div class="name">
+            <div class="title">test</div>
+            <div class="meta">
+              <p class="creation-info">created by: Lukasz Stroka <span class="date-info">(17 July 2018)</span></p>
+              <p class="email-info">sent from: <span class="email-from">Matt from 52Challenges.com</span></p>
+            </div>
+            <div class="other">|||||</div>
+          </div>
+          <div class="levels">
+            <div class="iconsAndStats">
+              <i class="fa fa-user-o"></i>
+              <div>0</div>
+            </div>
+            <div class="iconsAndStats">
+              <i class="fa fa-envelope-o"></i>
+              <div>0</div>
+            </div>
+            <div class="iconsAndStats">
+              <i class="fa fa-envelope-open-o"></i>
+              <div>0%</div>
+            </div>
+            <div class="iconsAndStats">
+              <i class="fa fa-reply"></i>
+              <div>0%</div>
+            </div>
+          </div>
+          <div class="interest">
+            <div class="iconsAndStats">
+              <i class="fa fa-smile-o"></i>
+              <div>0</div>
+             </div>
+            <div class="iconsAndStats">
+              <i class="fa fa-meh-o"></i>
+              <div>0</div>
+            </div>
+            <div class="iconsAndStats">
+              <i class="fa fa-frown-o"></i>
+              <div>0</div>
+            </div>
+          </div>
+          <div class="stats">
+            <label class="label"for="stats">stats</label>
+            <select name="stats">
+              <option value="0"></option>
+              <option value="1">Month</option>
+              <option value="2">Year</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>
+    <!-- ─────────────── POP UP MODAL when click on "ADD CAMPAIGN" ──────────────────────────────────── -->
+  <section id="overlay">
+    <div class="wrapper">
+      <div class="popup-image">
+        <div class="red-cross">
+          <img src="./images/red-cross.png" alt="">
+        </div>
+      </div>
+      <div class="popup-text">
+        <h1 class="title">Our API is in progress</h1>
+        <p class="desc">Right now you'll be able to see new campaigns layout and features on beta but remember that it's still beta testing. You won't have access to:</p>
+        <ul class="list">
+          <li>API</li>
+          <li>integrations</li>
+          <li>Webhooks</li>
+        </ul>
+        <p>If you don't need to use any of the above <a href="#">go to app</a> </p>
+      </div>
+    </div>
+
+    <img id="btn-close" src="./images/button-close.svg" alt="">
+  </section>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
+
+

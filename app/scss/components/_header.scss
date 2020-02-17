@@ -1,0 +1,112 @@
+.header {
+	background-color: $color-main;
+
+	& .nav {
+		display: flex;
+		width: 85vw;
+		max-width: 1400px;
+		height: 8vh;
+		padding-top: .9em;
+		margin: 0 auto;
+
+		& .woodpecker-logo {
+			display: inline-block;
+			width: 76px;
+			height: 116px;
+			margin-top: -2px;
+		}
+
+		& .nav__list {
+			display: flex;
+			align-items: center;
+			width: 100%;
+
+			& .nav__item,
+			.nav__item--user,
+			.nav__item--select-team {
+				text-align: center;
+				color: $color-text-white;
+				margin-left: 2em;
+				font-size: 1em;
+				font-family: $Avignon3;
+
+				& a {
+					color: $color-text-white;
+					text-decoration: none;
+					position: relative;
+
+					&.active::after {
+						content: '';
+						background-color: $color-link-active;
+						display: block;
+						height: 5px;
+						width: 100%;
+						position: absolute;
+						top: calc(5vh - 5px);
+					}
+				}
+
+				&--select-team,
+				&--user {
+					position: relative;
+
+					&:after {
+						content: '\f078';
+						font: 10px/1 FontAwesome;
+						font-weight: 400;
+						color: $color-link-active;
+						right: 0;
+						top: 13px;
+						position: absolute;
+						pointer-events: none;
+					}
+
+					& .select {
+						background-color: transparent;
+						color: $color-text-white;
+						border: none;
+						border-bottom: 1px solid $color-text-grey;
+						box-sizing: border-box;
+						width: 100%;
+						padding-bottom: 3px;
+						margin-top: 6px;
+						font-size: inherit;
+						/* for Firefox */
+						-moz-appearance: none;
+						/* for Chrome */
+						-webkit-appearance: none;
+
+						&:focus {
+							outline: none;
+						}
+
+						& option {
+							background-color: $color-main;
+							color: $color-text-white;
+							padding: .2em .3em;
+							border-radius: .25em;
+							text-align: center;
+						}
+					}
+				}
+
+				&--user {
+					margin: 0 30px 0 auto;
+					text-align: center;
+					line-height: 1.1em;
+					list-style: none;
+
+					&:after {
+						right: -20%;
+						font-size: 15px;
+					}
+
+					& .select {
+						border: 0;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

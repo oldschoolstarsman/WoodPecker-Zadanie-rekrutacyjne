@@ -1,0 +1,199 @@
+.dashboard {
+	& .container {
+		overflow: hidden;
+		width: 85vw;
+		height: 95vh;
+		max-width: 1400px;
+		margin: 0 auto;
+
+		& .dashboard__menu {
+			height: 150px;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			padding-top: 2em;
+
+			& .searchbox {
+				font-size: 1.1em;
+				width: 300px;
+				border: none;
+				border-bottom: 1px solid $color-text-grey;
+				padding-bottom: .3em;
+
+				&::placeholder {
+					font-size: 1em;
+					color: $color-text-grey;
+					font-style: italic;
+				}
+			}
+
+			& .menu__item {
+				margin-right: 1em;
+			}
+
+			& .btn-green {
+				margin-left: auto;
+				margin-right: 0;
+				padding: .4em 1.5em;
+				color: $color-text-white;
+				background-color: $color-btn;
+				border: none;
+				text-transform: uppercase;
+				font-size: 1.1em;
+
+				&:focus,
+				&:hover {
+					opacity: .8;
+				}
+			}
+		}
+
+		& .dashboard__campaigns {
+			& .tableheader {
+				display: grid;
+				grid-template-columns: 100px 1.5fr 2.5fr 150px 150px;
+				height: 30px;
+				text-transform: uppercase;
+
+				& .title {
+					grid-column: 3 / 4;
+					font-size: .8em;
+
+					& .emails-stats {
+						display: grid;
+						grid-template-columns: repeat(4, 1fr);
+						padding: .3em .1em;
+						text-align: center;
+					}
+				}
+
+				& .interest-levels {
+					grid-column: 4 / 6;
+					width: 100%;
+					margin-left: 1em;
+					padding: .3em 2em;
+					font-size: .8em;
+				}
+			}
+
+			& .campaign {
+				display: grid;
+				grid-template-columns: 100px 1.5fr 2.5fr 200px 100px;
+				grid-auto-rows: 200px;
+				border-top: 1px solid $color-text-grey;
+
+				& .status,
+				& .name,
+				& .levels,
+				& .interest,
+				& .stats {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					line-height: 19px;
+				}
+
+				& .status {
+					align-items: flex-start;
+					font-size: .725em;
+					text-transform: uppercase;
+
+					& .fa {
+						margin: 0 0 .2em .5em;
+						font-size: 1.8em;
+					}
+				}
+
+				& .name {
+					justify-content: space-around;
+					align-items: flex-start;
+					padding: 1em;
+
+					& .title {
+						font-weight: bold;
+					}
+
+					& .meta {
+						& span.date-info,
+						& span.email-from {
+							color: $color-text-grey;
+						}
+					}
+
+					& .other {
+						color: $color-text-grey;
+					}
+				}
+
+				& .levels {
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: space-around;
+
+					& .iconsAndStats {
+						display: flex;
+						flex-direction: column;
+						justify-content: baseline;
+						align-items: center;
+					}
+
+					& .fa {
+						font-size: 1.2em;
+						text-align: center;
+						opacity: .8;
+						padding: 1.2rem 0;
+						color: $color-text-grey;
+					}
+				}
+
+				& .interest {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-around;
+
+					& .iconsAndStats {
+						display: flex;
+						flex-direction: column;
+						justify-content: baseline;
+						align-items: center;
+					}
+
+					& .fa {
+						font-size: 2em;
+						opacity: .8;
+						padding: 1rem 0;
+					}
+
+					& .fa-smile-o {
+						color: $color-btn;
+					}
+
+					& .fa-meh-o {
+						color: rgb(86, 109, 187);
+					}
+				}
+
+				& .stats {
+					justify-content: flex-end;
+					align-items: center;
+					flex-direction: row;
+
+					& label {
+						background-color: $color-text-grey;
+						margin-right: 1px;
+						padding: .3em .7em;
+					}
+
+					& select {
+						width: 15px;
+						background-color: $color-text-grey;
+						height: 20px;
+						border: none;
+					}
+				}
+			}
+		}
+	}
+}

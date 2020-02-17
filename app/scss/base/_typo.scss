@@ -1,0 +1,27 @@
+@font-face {
+	font-family: 'AvignonBook3';
+	src: url('/assets/fonts/Avignon-Book3.eot'); /* IE9 Compat Modes */
+	src: url('/app/assets/fonts/Avignon-Book3.eot') format('embedded-opentype');
+	src: url('/app/assets/fonts/Avignon-Book3.woff') format('woff'),
+		url('/app/assets/fonts/Avignon-Book3.ttf') format('truetype'),
+		url('/app/assets/fonts/Avignon-Book3.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: 'AvignonItalic';
+	font-weight: italic;
+	src: url('/app/assets/fonts/avignonbookitalic.eot'); /* IE9 Compat Modes */
+	src: url('/app/assets/fonts/avignonbookitalic.eot?#iefix') format('embedded-opentype'),
+		url('/app/assets/fonts/avignonbookitalic.woff') format('woff'),
+		url('/app/assets/fonts/avignonbookitalic.ttf') format('truetype'),
+		url('/app/assets/fonts/avignonbookitalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+// @font-face {
+// 	font-family: 'AvignonDemi';
+// 	src: url('/app/assets/fonts/avignondemi.eot'); /* IE9 Compat Modes */
+// 	src: url('/app/assets/fonts/avignondemi.eot?#iefix') format('embedded-opentype'),
+// 		url('/app/assets/fonts/avignondemi.woff') format('woff'),
+// 		url('/app/assets/fonts/avignondemi.ttf') format('truetype'),
+// 		url('/app/assets/fonts/avignondemi.svg#svgFontName') format('svg'); /* Legacy iOS */
+// }
